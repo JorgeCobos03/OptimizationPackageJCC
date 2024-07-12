@@ -191,16 +191,16 @@ for precision in precision_values:
     print("-" * 50)
 ```
 ## Instrucciones de Uso
-### Instalar dependencias: Asegúrese de tener numpy instalado.
+1. Instalar dependencias: Asegúrese de tener numpy instalado, o instalelo con la siguiente linea en la terminal:
 
 ```bash
 pip install numpy
 ```
-* Definir funciones: Cree las funciones que desea minimizar.
+2. Definir funciones: Cree las funciones que desea minimizar como las de de ejemplo en "benchmark_functions.py".
 
-* Inicializar búsqueda: Cree instancias de FibonacciSearch con las funciones y los intervalos de búsqueda deseados.
+3. Inicializar búsqueda: Cree instancias con las funciones y los intervalos de búsqueda deseados.
 
-* Realizar búsqueda: Llame al método search con el valor de precisión deseado.
+4. Realizar búsqueda: Llame al método search con el valor de precisión deseado.
 
-* Visualizar resultados: Los resultados se muestran en formato de tabla con los valores óptimos encontrados para cada función.
+5. Visualizar resultados: Los resultados se muestran en formato de tabla con los valores óptimos encontrados para cada función.
 
