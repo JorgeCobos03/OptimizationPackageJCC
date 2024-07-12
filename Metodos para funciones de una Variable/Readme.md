@@ -4,29 +4,29 @@ Este proyecto implementa varios métodos numéricos para encontrar el mínimo de
 
 ## Métodos de Eliminación de Regiones
 
-### Método de División de Intervalos por la Mitad
+* Método de División de Intervalos por la Mitad
 
 El método de división de intervalos por la mitad consiste en dividir el intervalo de búsqueda en dos subintervalos y evaluar la función en los puntos medios de estos subintervalos. Se selecciona el subintervalo que contiene el mínimo y se repite el proceso hasta alcanzar la precisión deseada.
 
-### Búsqueda de Fibonacci
+* Búsqueda de Fibonacci
 
 La búsqueda de Fibonacci es un método de optimización que utiliza los números de Fibonacci para dividir el intervalo de búsqueda. Es eficiente en términos de evaluaciones de la función y converge más rápido que el método de división de intervalos por la mitad.
 
-### Método de la Sección Dorada
+* Método de la Sección Dorada
 
 El método de la sección dorada es un caso especial del método de división de intervalos que utiliza la proporción áurea para elegir los puntos de evaluación. Esto minimiza el número de evaluaciones necesarias.
 
 ## Métodos Basados en la Derivada
 
-### Método de Newton-Raphson
+* Método de Newton-Raphson
 
 El método de Newton-Raphson es un método iterativo para encontrar raíces de una función. Se puede adaptar para encontrar mínimos al buscar puntos donde la derivada de la función es cero.
 
-### Método de Bisección
+* Método de Bisección
 
 El método de bisección es un método de búsqueda de raíces que divide el intervalo de búsqueda en dos partes iguales y selecciona el subintervalo que contiene una raíz. Se puede adaptar para encontrar mínimos buscando cambios de signo en la derivada de la función.
 
-### Método de la Secante
+* Método de la Secante
 
 El método de la secante es similar al método de Newton-Raphson pero no requiere el cálculo de la derivada. En su lugar, utiliza una secante a la curva para aproximar la raíz.
 
@@ -196,11 +196,11 @@ for precision in precision_values:
 ```bash
 pip install numpy
 ```
-### Definir funciones: Cree las funciones que desea minimizar.
+* Definir funciones: Cree las funciones que desea minimizar.
 
-### Inicializar búsqueda: Cree instancias de FibonacciSearch con las funciones y los intervalos de búsqueda deseados.
+* Inicializar búsqueda: Cree instancias de FibonacciSearch con las funciones y los intervalos de búsqueda deseados.
 
-### Realizar búsqueda: Llame al método search con el valor de precisión deseado.
+* Realizar búsqueda: Llame al método search con el valor de precisión deseado.
 
-### Visualizar resultados: Los resultados se muestran en formato de tabla con los valores óptimos encontrados para cada función.
+* Visualizar resultados: Los resultados se muestran en formato de tabla con los valores óptimos encontrados para cada función.
 
