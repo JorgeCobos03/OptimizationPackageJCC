@@ -21,6 +21,6 @@ Contents
 .. toctree::
 
    uso
-   Métodos para Funciones de una Variable
-   Metodos para Funciones Multivariadas
+   Métodos para Funciones Univariadas
+   Métodos para Funciones Multivariadas
    api
