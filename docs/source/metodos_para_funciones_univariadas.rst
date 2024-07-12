@@ -21,6 +21,7 @@ Fibonacci, que optimizan la búsqueda reduciendo el número de
 evaluaciones de la función en cada paso.
 
 1. Método de División de Intervalos por la Mitad
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 El método de división de intervalos por la mitad 
 consiste en dividir el intervalo de búsqueda en dos 
@@ -29,7 +30,7 @@ de estos subintervalos. Se selecciona el subintervalo
 que contiene el mínimo y se repite el proceso hasta 
 alcanzar la precisión deseada.
 
-- Expliación
+**Expliación**
 
 Clase que implementa el método de búsqueda de intervalos mediante la división por la mitad.
 
@@ -53,7 +54,7 @@ Clase que implementa el método de búsqueda de intervalos mediante la división
         :returns: El punto óptimo encontrado.
         :rtype: float
 
-- Ejemplo de Uso
+**Ejemplo de Uso**
 
 .. code-block:: python
 
@@ -145,13 +146,14 @@ Clase que implementa el método de búsqueda de intervalos mediante la división
 
 
 2. Búsqueda de Fibonacci
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 La búsqueda de Fibonacci es otro método de optimización
 que utiliza los números de Fibonacci para dividir el intervalo
 de búsqueda. Es eficiente en términos de evaluaciones de la función
 y converge más rápido que el método de división de intervalos por la mitad.
 
-- Explicación
+**Explicación**
 
 Clase que implementa el método de búsqueda de Fibonacci para encontrar el mínimo de una función.
 
@@ -184,7 +186,7 @@ Clase que implementa el método de búsqueda de Fibonacci para encontrar el mín
         :returns: El valor del punto medio del intervalo de búsqueda después de cada iteración.
         :rtype: float
 
-- Ejemplo de Uso
+**Ejemplo de Uso**
 
 .. code-block:: python
 
@@ -309,12 +311,13 @@ Clase que implementa el método de búsqueda de Fibonacci para encontrar el mín
 
 
 3. Método de la Sección Dorada
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 El método de la sección dorada es un caso especial del método
 de división de intervalos que utiliza la proporción áurea para
 elegir los puntos de evaluación. Esto minimiza el número de evaluaciones necesarias.
 
-- Explicación
+**Explicación**
 
 Clase que implementa el método de búsqueda de la sección áurea.
 
@@ -338,7 +341,7 @@ Clase que implementa el método de búsqueda de la sección áurea.
         :returns: El punto óptimo encontrado.
         :rtype: float
 
-- Ejemplo de Uso
+**Ejemplo de Uso**
 
 .. code-block:: python
 
@@ -440,13 +443,14 @@ raíces de funciones univariadas para localizar mínimos en derivadas, y el Mét
 la Secante, una variante del método de Newton-Raphson que no requiere la segunda derivada.
 
 1. Método de Newton-Raphson
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 El método de Newton-Raphson es un método iterativo para encontrar
 raíces de una función. Se puede adaptar para encontrar mínimos al
 buscar puntos donde la derivada de la función es cero.
 Utiliza derivadas de la función para encontrar sus raíces, adaptado para encontrar mínimos.
 
-- Explicación
+**Explicación**
 
 Clase que implementa el método de búsqueda de Newton-Raphson.
 
@@ -472,8 +476,7 @@ Clase que implementa el método de búsqueda de Newton-Raphson.
         :returns: El punto óptimo encontrado.
         :rtype: float
 
-- Ejemplo de Uso
-
+**Ejemplo de Uso**
 
 .. code-block:: python
 
@@ -571,13 +574,14 @@ Clase que implementa el método de búsqueda de Newton-Raphson.
             print(f"{name}: Óptimo (x) = {result:.10f} | Valor de la función f(x) = {benchmark_functions[name](result):.10f}")
 
 2. Método de Bisección
+^^^^^^^^^^^^^^^^^^^^^^
 
 El método de bisección es un método de búsqueda de raíces que divide
 el intervalo de búsqueda en dos partes iguales y selecciona el 
 subintervalo que contiene una raíz. Se puede adaptar para encontrar
 mínimos buscando cambios de signo en la derivada de la función.
 
-- Explicación
+**Explicación**
 
 Clase que implementa el método de búsqueda por bisección.
 
@@ -601,8 +605,7 @@ Clase que implementa el método de búsqueda por bisección.
         :returns: El punto óptimo encontrado.
         :rtype: float
 
-- Ejemplo de Uso
-
+**Ejemplo de Uso**
 
 .. code-block:: python
 
@@ -695,13 +698,13 @@ Clase que implementa el método de búsqueda por bisección.
             print(f"{name}: Óptimo (x) = {result:.10f} | Valor de la función f(x) = {benchmark_functions[name](result):.10f}")
 
 3. Método de la Secante
-
+^^^^^^^^^^^^^^^^^^^^^^^
 
 El método de la secante es similar al método de Newton-Raphson pero
 no requiere el cálculo de la derivada. En su lugar, utiliza una secante
 a la curva para aproximar la raíz.
 
-- Expliación
+**Expliación**
 
 Clase que implementa el método de búsqueda secante.
 
@@ -727,8 +730,7 @@ Clase que implementa el método de búsqueda secante.
         :returns: El punto óptimo encontrado.
         :rtype: float
 
-- Ejemplo de Uso
-
+**Ejemplo de Uso**
 
 .. code-block:: python
 
