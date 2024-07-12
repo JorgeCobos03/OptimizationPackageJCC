@@ -160,7 +160,7 @@ if __name__ == "__main__":
 ```bash
 pip install numpy
 ```
-2. Definir funciones: Cree las funciones que desea minimizar como las de de ejemplo en "benchmark_functions.py".
+2. Definir funciones: Cree las funciones que desea minimizar como las de de ejemplo en **benchmark_functions.py**.
 
 3. Inicializar búsqueda: Cree instancias con las funciones y los intervalos de búsqueda deseados.
 
