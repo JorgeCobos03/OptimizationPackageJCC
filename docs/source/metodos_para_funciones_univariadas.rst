@@ -8,7 +8,7 @@ A continuación, se describen los métodos y se proporciona un ejemplo de
 implementación utilizando el método de búsqueda de Fibonacci.
 
 Métodos de Eliminación de Regiones
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------
 
 Los Métodos de Eliminación de Regiones son técnicas utilizadas 
 para encontrar el mínimo de una función univariada o multivariada 
@@ -20,8 +20,7 @@ el Método de División de Intervalos por la Mitad y la Búsqueda de
 Fibonacci, que optimizan la búsqueda reduciendo el número de 
 evaluaciones de la función en cada paso.
 
-Método de División de Intervalos por la Mitad
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1. Método de División de Intervalos por la Mitad
 
 El método de división de intervalos por la mitad 
 consiste en dividir el intervalo de búsqueda en dos 
@@ -30,10 +29,7 @@ de estos subintervalos. Se selecciona el subintervalo
 que contiene el mínimo y se repite el proceso hasta 
 alcanzar la precisión deseada.
 
-.. _interval_halving_search:
-
-IntervalHalvingSearch
-=====================
+- Expliación
 
 Clase que implementa el método de búsqueda de intervalos mediante la división por la mitad.
 
@@ -57,8 +53,7 @@ Clase que implementa el método de búsqueda de intervalos mediante la división
         :returns: El punto óptimo encontrado.
         :rtype: float
 
-Ejemplo de Uso
-==============
+- Ejemplo de Uso
 
 .. code-block:: python
 
@@ -149,13 +144,14 @@ Ejemplo de Uso
             print(f"{name}: Óptimo (x) = {result:.10f} | Valor de la función f(x) = {benchmark_functions[name](result):.10f}")
 
 
-Búsqueda de Fibonacci
-^^^^^^^^^^^^^^^^^^^^
+2. Búsqueda de Fibonacci
 
 La búsqueda de Fibonacci es otro método de optimización
 que utiliza los números de Fibonacci para dividir el intervalo
 de búsqueda. Es eficiente en términos de evaluaciones de la función
 y converge más rápido que el método de división de intervalos por la mitad.
+
+- Explicación
 
 Clase que implementa el método de búsqueda de Fibonacci para encontrar el mínimo de una función.
 
@@ -188,8 +184,7 @@ Clase que implementa el método de búsqueda de Fibonacci para encontrar el mín
         :returns: El valor del punto medio del intervalo de búsqueda después de cada iteración.
         :rtype: float
 
-Ejemplo de Uso
-==============
+- Ejemplo de Uso
 
 .. code-block:: python
 
@@ -313,17 +308,13 @@ Ejemplo de Uso
             print(f"{name}: Óptimo (x) = {result:.10f} | Valor de la función f(x) = {benchmark_functions[name](result):.10f}")
 
 
-Método de la Sección Dorada
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+3. Método de la Sección Dorada
 
 El método de la sección dorada es un caso especial del método
 de división de intervalos que utiliza la proporción áurea para
 elegir los puntos de evaluación. Esto minimiza el número de evaluaciones necesarias.
 
-.. _golden_section_search:
-
-GoldenSectionSearch
-===================
+- Explicación
 
 Clase que implementa el método de búsqueda de la sección áurea.
 
@@ -347,8 +338,7 @@ Clase que implementa el método de búsqueda de la sección áurea.
         :returns: El punto óptimo encontrado.
         :rtype: float
 
-Ejemplo de Uso
-==============
+- Ejemplo de Uso
 
 .. code-block:: python
 
@@ -439,7 +429,8 @@ Ejemplo de Uso
             print(f"{name}: Óptimo (x) = {result:.10f} | Valor de la función f(x) = {benchmark_functions[name](result):.10f}")
 
 Métodos Basados en la Derivada
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
+
 Los Métodos Basados en la Derivada son técnicas utilizadas para encontrar 
 mínimos de funciones mediante el análisis de sus derivadas. Estos métodos 
 son eficaces cuando se dispone de información sobre la pendiente de la función 
@@ -448,18 +439,14 @@ derivadas para iterar hacia mínimos locales, el Método de Bisección, que encu
 raíces de funciones univariadas para localizar mínimos en derivadas, y el Método de 
 la Secante, una variante del método de Newton-Raphson que no requiere la segunda derivada.
 
-Método de Newton-Raphson
-^^^^^^^^^^^^^^^^^^^^^^^^
+1. Método de Newton-Raphson
 
 El método de Newton-Raphson es un método iterativo para encontrar
 raíces de una función. Se puede adaptar para encontrar mínimos al
 buscar puntos donde la derivada de la función es cero.
 Utiliza derivadas de la función para encontrar sus raíces, adaptado para encontrar mínimos.
 
-.. _newton_raphson_search:
-
-NewtonRaphsonSearch
-===================
+- Explicación
 
 Clase que implementa el método de búsqueda de Newton-Raphson.
 
@@ -485,8 +472,8 @@ Clase que implementa el método de búsqueda de Newton-Raphson.
         :returns: El punto óptimo encontrado.
         :rtype: float
 
-Ejemplo de Uso
-==============
+- Ejemplo de Uso
+
 
 .. code-block:: python
 
@@ -583,18 +570,14 @@ Ejemplo de Uso
         for name, result in search_results.items():
             print(f"{name}: Óptimo (x) = {result:.10f} | Valor de la función f(x) = {benchmark_functions[name](result):.10f}")
 
-Método de Bisección
-^^^^^^^^^^^^^^^^^^^
+2. Método de Bisección
 
 El método de bisección es un método de búsqueda de raíces que divide
 el intervalo de búsqueda en dos partes iguales y selecciona el 
 subintervalo que contiene una raíz. Se puede adaptar para encontrar
 mínimos buscando cambios de signo en la derivada de la función.
 
-.. _bisection_search:
-
-BisectionSearch
-===============
+- Explicación
 
 Clase que implementa el método de búsqueda por bisección.
 
@@ -618,8 +601,8 @@ Clase que implementa el método de búsqueda por bisección.
         :returns: El punto óptimo encontrado.
         :rtype: float
 
-Ejemplo de Uso
-==============
+- Ejemplo de Uso
+
 
 .. code-block:: python
 
@@ -711,17 +694,14 @@ Ejemplo de Uso
         for name, result in search_results.items():
             print(f"{name}: Óptimo (x) = {result:.10f} | Valor de la función f(x) = {benchmark_functions[name](result):.10f}")
 
-Método de la Secante
-^^^^^^^^^^^^^^^^^^^^
+3. Método de la Secante
+
 
 El método de la secante es similar al método de Newton-Raphson pero
 no requiere el cálculo de la derivada. En su lugar, utiliza una secante
 a la curva para aproximar la raíz.
 
-.. _secant_search:
-
-SecantSearch
-============
+- Expliación
 
 Clase que implementa el método de búsqueda secante.
 
@@ -747,8 +727,8 @@ Clase que implementa el método de búsqueda secante.
         :returns: El punto óptimo encontrado.
         :rtype: float
 
-Ejemplo de Uso
-==============
+- Ejemplo de Uso
+
 
 .. code-block:: python
 
