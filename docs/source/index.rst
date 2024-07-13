@@ -17,7 +17,7 @@ y la sección :ref:`Instalación` para instalarlo.
 
 Contents
 --------
-
+   
 .. toctree::
 
    uso
