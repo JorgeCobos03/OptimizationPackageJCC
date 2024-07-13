@@ -5,6 +5,9 @@ Este repositorio proporciona una colección de algoritmos para la optimización 
 ```bash
 pip install -i https://test.pypi.org/simple/ OptimizationPackageJCC==0.0.1
 ```
+Para una explicación mas detallada puedes revisar la documentación en Read The Docs:
+
+[https://optimizationpackagejcc.readthedocs.io/es/latest/index.html](https://optimizationpackagejcc.readthedocs.io/es/latest/index.html)
 
 ## Métodos Implementados
 
