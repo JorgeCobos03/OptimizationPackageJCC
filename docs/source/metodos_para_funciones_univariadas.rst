@@ -20,8 +20,8 @@ el Método de División de Intervalos por la Mitad y la Búsqueda de
 Fibonacci, que optimizan la búsqueda reduciendo el número de 
 evaluaciones de la función en cada paso.
 
-1. Método de División de Intervalos por la Mitad
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Método de División de Intervalos por la Mitad
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 El método de división de intervalos por la mitad 
 consiste en dividir el intervalo de búsqueda en dos 
@@ -145,8 +145,8 @@ Clase que implementa el método de búsqueda de intervalos mediante la división
             print(f"{name}: Óptimo (x) = {result:.10f} | Valor de la función f(x) = {benchmark_functions[name](result):.10f}")
 
 
-2. Búsqueda de Fibonacci
-^^^^^^^^^^^^^^^^^^^^^^^^
+Búsqueda de Fibonacci
+^^^^^^^^^^^^^^^^^^^^^
 
 La búsqueda de Fibonacci es otro método de optimización
 que utiliza los números de Fibonacci para dividir el intervalo
@@ -310,8 +310,8 @@ Clase que implementa el método de búsqueda de Fibonacci para encontrar el mín
             print(f"{name}: Óptimo (x) = {result:.10f} | Valor de la función f(x) = {benchmark_functions[name](result):.10f}")
 
 
-3. Método de la Sección Dorada
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Método de la Sección Dorada
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 El método de la sección dorada es un caso especial del método
 de división de intervalos que utiliza la proporción áurea para
@@ -442,8 +442,8 @@ derivadas para iterar hacia mínimos locales, el Método de Bisección, que encu
 raíces de funciones univariadas para localizar mínimos en derivadas, y el Método de 
 la Secante, una variante del método de Newton-Raphson que no requiere la segunda derivada.
 
-1. Método de Newton-Raphson
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Método de Newton-Raphson
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 El método de Newton-Raphson es un método iterativo para encontrar
 raíces de una función. Se puede adaptar para encontrar mínimos al
@@ -573,8 +573,8 @@ Clase que implementa el método de búsqueda de Newton-Raphson.
         for name, result in search_results.items():
             print(f"{name}: Óptimo (x) = {result:.10f} | Valor de la función f(x) = {benchmark_functions[name](result):.10f}")
 
-2. Método de Bisección
-^^^^^^^^^^^^^^^^^^^^^^
+Método de Bisección
+^^^^^^^^^^^^^^^^^^^
 
 El método de bisección es un método de búsqueda de raíces que divide
 el intervalo de búsqueda en dos partes iguales y selecciona el 
@@ -697,8 +697,8 @@ Clase que implementa el método de búsqueda por bisección.
         for name, result in search_results.items():
             print(f"{name}: Óptimo (x) = {result:.10f} | Valor de la función f(x) = {benchmark_functions[name](result):.10f}")
 
-3. Método de la Secante
-^^^^^^^^^^^^^^^^^^^^^^^
+Método de la Secante
+^^^^^^^^^^^^^^^^^^^^
 
 El método de la secante es similar al método de Newton-Raphson pero
 no requiere el cálculo de la derivada. En su lugar, utiliza una secante
