@@ -17,10 +17,10 @@ y la sección :ref:`Instalación` para instalarlo.
 
 Contents
 --------
-   
+
 .. toctree::
 
    uso
    metodos_para_funciones_univariadas
    metodos_para_funciones_multivariadas
-   api
+   links

@@ -6,7 +6,7 @@ USO
 Instalación
 ------------
 
-Este paquete puede ser instalado fácilmente utilizando `pip`, el gestor de paquetes de Python. A continuación se detallan los pasos necesarios para instalar `OptimizationPackageJCC` desde el índice de prueba de PyPI. Si ta lo tienes instalado peudes salatar directamente a la seccion `Métodos para Funciones de una Variable`
+Este paquete puede ser instalado fácilmente utilizando `pip`, el gestor de paquetes de Python. A continuación se detallan los pasos necesarios para instalar `OptimizationPackageJCC` desde el índice de prueba de PyPI. Si ta lo tienes instalado peudes salatar directamente a la seccion :ref:`Métodos para Funciones de una Variable`.
 
 Primero, asegúrate de tener `pip` instalado en tu sistema. Si no lo tienes, puedes instalarlo siguiendo las instrucciones en la documentación oficial de [pip](https://pip.pypa.io/en/stable/installation/).
 
