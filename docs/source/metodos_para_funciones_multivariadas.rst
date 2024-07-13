@@ -7,11 +7,12 @@ Este proyecto tambien implementa varios métodos numéricos para encontrar el m�
 Métodos Directos
 ----------------
 
-1. Caminata Aleatoria
+Caminata Aleatoria
+^^^^^^^^^^^^^^^^^^^^
 
 El método de caminata aleatoria realiza movimientos aleatorios en el espacio de búsqueda. Es útil para explorar soluciones en problemas donde la función objetivo no es diferenciable o no tiene una estructura regular.
 
-.. def:: random_walk(f_name_or_index, x0, max_iter=1000, epsilon=1e-6, mu=0, sigma=1)
+.. function:: random_walk(f_name_or_index, x0, max_iter=1000, epsilon=1e-6, mu=0, sigma=1)
 
   Implementa el algoritmo de Random Walk para minimizar la función objetivo.
 
@@ -170,11 +171,12 @@ Importar el módulo y definir las funciones de benchmark:
         print(f"Mejor solución: {mejor_solucion}, Valor de la función: {valor_funcion}")
 
 
-2. Método de Nelder y Mead (Simplex)
+Método de Nelder y Mead (Simplex)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 El método de Nelder y Mead, también conocido como método del simplex, utiliza un poliedro en el espacio de búsqueda para aproximar la solución óptima. Es robusto y no requiere derivadas de la función objetivo.
 
-.. def:: **nelder_mead(func, initial_simplex, gamma=2, beta=0.5, sigma=0.5, tol=1e-5, max_iter=1000)
+.. function:: **nelder_mead(func, initial_simplex, gamma=2, beta=0.5, sigma=0.5, tol=1e-5, max_iter=1000)
 
   Realiza la optimización Nelder-Mead Simplex para minimizar la función objetivo.
 
@@ -326,11 +328,12 @@ El método de Nelder y Mead, también conocido como método del simplex, utiliza
         print(f"Punto óptimo: {result}")
 
 
-3. Método de Hooke-Jeeves
+Método de Hooke-Jeeves
+^^^^^^^^^^^^^^^^^^^^^^
 
 El método de Hooke-Jeeves es una técnica de búsqueda directa que explora el espacio de búsqueda mediante pasos incrementales y reducciones adaptativas del tamaño del paso. Es efectivo para encontrar mínimos locales en funciones continuas.
 
-.. def:: hooke_jeeves(x_initial, delta, alpha, function, max_iterations=1000, tolerance=1e-6)
+.. function:: hooke_jeeves(x_initial, delta, alpha, function, max_iterations=1000, tolerance=1e-6)
 
   Realiza la optimización Hooke-Jeeves para minimizar la función objetivo.
 
@@ -483,11 +486,12 @@ El método de Hooke-Jeeves es una técnica de búsqueda directa que explora el e
 Métodos de Gradiente
 --------------------
 
-1. Método de Cauchy
+Método de Cauchy
+^^^^^^^^^^^^^^^^
 
 El método de Cauchy utiliza una combinación de descensos por gradiente y pasos de búsqueda lineal para encontrar el mínimo local de una función. Es eficiente pero puede requerir ajustes en el tamaño de paso.
 
-.. def:: regla_eliminacion(x1, x2, fx1, fx2, a, b)
+.. function:: regla_eliminacion(x1, x2, fx1, fx2, a, b)
 
   Implementa la regla de eliminación para la búsqueda unidireccional.
   
@@ -506,7 +510,7 @@ El método de Cauchy utiliza una combinación de descensos por gradiente y pasos
   :returns: Nuevos límites del intervalo después de la eliminación.
   :rtype: tuple
 
-.. def:: w_to_x(w, a, b)
+.. function:: w_to_x(w, a, b)
 
   Convierte un valor w en el intervalo [0, 1] a un valor en el intervalo [a, b].
   
@@ -519,7 +523,7 @@ El método de Cauchy utiliza una combinación de descensos por gradiente y pasos
   :returns: Valor correspondiente en el intervalo [a, b].
   :rtype: float
 
-.. def:: busquedaDorada(funcion, epsilon, a, b)
+.. function:: busquedaDorada(funcion, epsilon, a, b)
 
   Realiza una búsqueda dorada para minimizar una función en un intervalo dado.
   
@@ -534,7 +538,7 @@ El método de Cauchy utiliza una combinación de descensos por gradiente y pasos
   :returns: Punto en el intervalo [a, b] que minimiza la función.
   :rtype: float
 
-.. def:: gradiente(f, x, deltaX=0.001)
+.. function:: gradiente(f, x, deltaX=0.001)
 
   Calcula el gradiente numérico de una función en un punto dado.
   
@@ -547,7 +551,7 @@ El método de Cauchy utiliza una combinación de descensos por gradiente y pasos
   :returns: Gradiente numérico de la función en el punto dado.
   :rtype: list
 
-.. def:: cauchy(funcion, x0, epsilon1, epsilon2, M, optimizador_univariable)
+.. function:: cauchy(funcion, x0, epsilon1, epsilon2, M, optimizador_univariable)
 
   Implementa el método de Cauchy para minimizar una función.
   
@@ -738,11 +742,12 @@ El método de Cauchy utiliza una combinación de descensos por gradiente y pasos
         resultado, valor = cauchy(benchmark_functions[10], x0, 0.001, 0.001, 100, busquedaDorada)
         print(f"Resultado Cauchy: {resultado}, Valor de la función: {valor}")
 
-2. Método de Fletcher-Reeves
+Método de Fletcher-Reeves
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 El método de Fletcher-Reeves es un algoritmo de descenso por gradiente conjugado que utiliza direcciones conjugadas para mejorar la convergencia hacia el mínimo local de una función.
 
-.. def:: gradiente(f, x, deltaX=0.001)
+.. function:: gradiente(f, x, deltaX=0.001)
 
   Calcula el gradiente numérico de una función en un punto dado.
   
@@ -755,7 +760,7 @@ El método de Fletcher-Reeves es un algoritmo de descenso por gradiente conjugad
   :returns: Gradiente numérico de la función en el punto dado.
   :rtype: list
 
-.. def:: busqueda_unidireccional(f_lambda, a=0, b=1, tol=1e-5)
+.. function:: busqueda_unidireccional(f_lambda, a=0, b=1, tol=1e-5)
 
   Realiza una búsqueda unidireccional para minimizar una función en un intervalo dado.
   
@@ -770,7 +775,7 @@ El método de Fletcher-Reeves es un algoritmo de descenso por gradiente conjugad
   :returns: Punto en el intervalo [a, b] que minimiza la función.
   :rtype: float
 
-.. def:: conjugate_gradient_method(f, x0, tol1=1e-5, tol2=1e-5, tol3=1e-5, max_iter=1000)
+.. function:: conjugate_gradient_method(f, x0, tol1=1e-5, tol2=1e-5, tol3=1e-5, max_iter=1000)
 
   Implementa el método del gradiente conjugado para minimizar una función.
   
@@ -955,11 +960,12 @@ El método de Fletcher-Reeves es un algoritmo de descenso por gradiente conjugad
         resultado, valor = conjugate_gradient_method(benchmark_functions[10], x0)
         print(f"Resultado Gradiente Conjugado: {resultado}, Valor de la función: {valor}")
 
-3. Método de Newton
+Método de Newton
+^^^^^^^^^^^^^^^^
 
 El método de Newton es un algoritmo avanzado que utiliza la matriz Hessiana de la función objetivo para calcular la dirección y el tamaño del paso óptimos. Es eficiente pero puede ser sensible a la precisión numérica y requerir evaluaciones exactas de la Hessiana.
 
-.. def:: gradiente(f, x, deltaX=1e-5)
+.. function:: gradiente(f, x, deltaX=1e-5)
 
   Calcula el gradiente numérico de una función en un punto dado.
   
@@ -972,7 +978,7 @@ El método de Newton es un algoritmo avanzado que utiliza la matriz Hessiana de 
   :returns: Gradiente numérico de la función en el punto dado.
   :rtype: np.ndarray
 
-.. def::hessian_matrix(f, x, deltaX=1e-5)
+.. function::hessian_matrix(f, x, deltaX=1e-5)
 
   Calcula la matriz Hessiana numérica de una función en un punto dado.
   
@@ -985,7 +991,7 @@ El método de Newton es un algoritmo avanzado que utiliza la matriz Hessiana de 
   :returns: Matriz Hessiana numérica de la función en el punto dado.
   :rtype: np.ndarray
 
-.. def:: newton_method(f, grad_f, x0, tol1=1e-5, tol2=1e-5, tol3=1e-5, max_iter=1000)
+.. function:: newton_method(f, grad_f, x0, tol1=1e-5, tol2=1e-5, tol3=1e-5, max_iter=1000)
 
   Implementa el método de Newton para minimizar una función.
   
