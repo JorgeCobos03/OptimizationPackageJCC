@@ -11,9 +11,6 @@ Métodos Directos
 
 El método de caminata aleatoria realiza movimientos aleatorios en el espacio de búsqueda. Es útil para explorar soluciones en problemas donde la función objetivo no es diferenciable o no tiene una estructura regular.
 
-Funciones
-^^^^^^^^^
-
 .. def:: random_walk(f_name_or_index, x0, max_iter=1000, epsilon=1e-6, mu=0, sigma=1)
 
   Implementa el algoritmo de Random Walk para minimizar la función objetivo.
@@ -1191,4 +1188,3 @@ El método de Newton es un algoritmo avanzado que utiliza la matriz Hessiana de 
         x0 = [0.0, 0.0]
         minimo = newton_method(benchmark_functions[10], lambda x: gradiente(benchmark_functions[10], x), x0)
         print(f"Resultado Método de Newton: {minimo}")
-        
