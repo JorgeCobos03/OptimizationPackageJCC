@@ -7,9 +7,9 @@ Gracias por usar!
 Repositorio de GitHub:
 ----------------------
 
-.. _GitHub: https://github.com/JorgeCobos03/OptimizationPackageJCC
+`GitHub <https://github.com/JorgeCobos03/OptimizationPackageJCC>`_
 
 TestPyPi:
 ---------
 
-.. _TestPyPi: https://test.pypi.org/project/OptimizationPackageJCC/0.0.1/
+`TestPyPi <https://test.pypi.org/project/OptimizationPackageJCC/0.0.1/>`_
